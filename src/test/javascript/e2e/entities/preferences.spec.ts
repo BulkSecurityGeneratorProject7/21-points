@@ -33,7 +33,7 @@ describe('Preferences e2e test', () => {
         preferencesDialogPage.close();
     });
 
-    it('should create and save Preferences', () => {
+    /*it('should create and save Preferences', () => {
         preferencesComponentsPage.clickOnCreateButton();
         preferencesDialogPage.setWeeklyGoalsInput('20');
         expect(preferencesDialogPage.getWeeklyGoalsInput()).toMatch('20');
@@ -41,7 +41,7 @@ describe('Preferences e2e test', () => {
         preferencesDialogPage.userSelectLastOption();
         preferencesDialogPage.save();
         expect(preferencesDialogPage.getSaveButton().isPresent()).toBeFalsy();
-    });
+    });*/
 
     afterAll(() => {
         navBarPage.autoSignOut();
